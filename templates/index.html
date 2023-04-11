@@ -34,16 +34,16 @@
         <form>
   </center>
   <div class="row">
-    {% if data.country_code %}
+    {% comment %} {% if data.country_code %} {% endcomment %}
     <div class="col-md-6 col-md-offset-3">
-      <h1>{{city}}</h1>
-      <h3>country code : {{data.country_code}}</h1>
-        <h5>coordinate : {{data.coordinate}}</h5>
-        <h5>temp : {{data.temp}}</h5>
-        <h5>pressure : {{data.pressure}} </h5>
-        <h5>humidity : {{data.humidity}}</h5>
+      <h1>City: {{city}}</h1>
+      <h3>Country Code : {{data.country_code}}</h1>
+        <h5>Coordinate : {{data.coordinate}}</h5>
+        <h5>Temp : {{data.temp}}</h5>
+        <h5>Pressure : {{data.pressure}} </h5>
+        <h5>Humidity : {{data.humidity}}</h5>
     </div>
-    {% endif %}
+    {% comment %} {% endif %} {% endcomment %}
   </div>
 </body>
 
